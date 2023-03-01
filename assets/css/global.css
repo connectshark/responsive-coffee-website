@@ -1,0 +1,19 @@
+
+* {
+  font-family: var(--font-family)
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100svh;
+  background-color: #513228;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.title-family {
+  font-family: var(--title-family);
+}
