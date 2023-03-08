@@ -1,0 +1,49 @@
+#history {
+  background-color: #fff;
+  color: #000000ee;
+  margin: -5rem 0 0;
+  border-radius: 4rem 4rem 0 0;
+}
+#history .container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 5rem 0;
+}
+#history .container .content {
+  margin-bottom: 4rem;
+}
+
+#history .container .content h2 {
+  font-family: var(--title-family);
+  font-size: 2rem;
+  line-height: 4;
+}
+#history .container .content p {
+  font-size: 1rem;
+  color: #00000099;
+}
+#history .container figure img {
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #history .container {
+    text-align: left;
+    padding: 7rem 0;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #history .container figure {
+    width: 45%;
+  }
+  #history .container .content {
+    width: 45%;
+  }
+  #history .container .content h2 {
+    line-height: 3;
+  }
+}
