@@ -25,46 +25,14 @@ a {
   text-decoration: none;
 }
 
-section {
-  margin-bottom: 4rem;
-  scroll-margin: 4.5rem 0 0 0;
-}
-
 input[type=text],
 input[type=email],
 textarea {
   border: none;
-  outline: 2px solid var(--shadow);
   width: 100%;
   padding: 1rem;
   box-sizing: border-box;
   appearance: none;
   border-radius: .5rem;
   resize: none;
-}
-input[type=text]::placeholder,
-input[type=email]::placeholder,
-textarea::placeholder {
-  color: var(--content-font);
-}
-.sub-title {
-  color: var(--primary-dark);
-  margin-bottom: 2rem;
-  text-align: center;
-}
-.sub-title span {
-  position: relative;
-}
-
-.sub-title span::before {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: .2rem;
-  left: 0;
-  right: 0;
-  bottom: -.4rem;
-  margin: auto;
-  border-radius: 999rem;
-  background-color: var(--primary-dark);
 }

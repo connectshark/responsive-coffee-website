@@ -1,0 +1,83 @@
+#shop {
+  margin: -5rem 0 0;
+  border-radius: 4rem 4rem 0 0;
+  background-color: var(--color-main);
+}
+
+#shop .container {
+  padding: 4rem 0;
+  width: 80%;
+  margin: auto;
+  max-width: 1200px;
+}
+#shop .container .content {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+#shop .container .content .row {
+  margin-bottom: 2rem;
+}
+#shop .container .content .button {
+  background-color: var(--color-deep-golden);
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 999rem;
+  cursor: pointer;
+  color: var(--color-main);
+  transition: transform .3s ease;
+  color: #fff;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+#shop .container .content .button:hover {
+  transform: translateY(.5rem);
+}
+#shop .container .products {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#shop .container .products .product-item {
+  width: 40%;
+  margin-bottom: 3rem;
+}
+#shop .container .products .product-item figure {
+  margin-bottom: 1rem;
+  transition: transform .3s ease;
+}
+#shop .container .products .product-item figure img {
+  width: 7rem;
+  margin: auto;
+}
+#shop .container .products .product-item:hover figure {
+  transform: translateY(-1rem);
+}
+#shop .container .products .product-item h4{
+  font-size: 1.2rem;
+}
+#shop .container .products .product-item h4,
+#shop .container .products .product-item p{
+  font-family: var(--title-family);
+}
+
+@media screen and (min-width: 1024px) {
+  #shop .container {
+    padding: 7rem 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #shop .container .content {
+    width: 40%;
+    text-align: left;
+  }
+  #shop .container .products {
+    width: 50%;
+  }
+  #shop .container .products .product-item {
+    width: 25%;
+  }
+}

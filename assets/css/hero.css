@@ -1,0 +1,73 @@
+#hero {
+  text-align: center;
+  border-top: 1px dashed #fff;
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background-image: linear-gradient(to bottom, var(--color-main) 0%, var(--color-deep-golden) 90%);
+}
+
+#hero .container {
+  padding: 4rem 0;
+  width: 80%;
+  margin: 0 auto 2rem;
+  max-width: 1200px;
+}
+
+#hero .container .main{
+  margin-bottom: 4rem;
+}
+
+#hero .container .main .sub-title {
+  color: var(--color-golden);
+  margin-bottom: 2rem;
+}
+#hero .main h2 {
+  font-family: var(--title-family);
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+#hero .main h2 img {
+  width: 5rem;
+}
+#hero .main .content {
+  margin-bottom: 2rem;
+}
+#hero .main .button {
+  background-color: var(--color-golden);
+  padding: 1rem 2rem;
+  border: 0;
+  border-radius: 999rem;
+  cursor: pointer;
+  color: var(--color-main);
+  transition: opacity .3s ease;
+}
+#hero .main .button i {
+  margin: 0 .2rem 0 0;
+  transition: margin .3s ease;
+}
+#hero .main .button:hover {
+  opacity: .8;
+}
+#hero .main .button:hover i {
+  margin: 0 0 0 .2rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+  #hero {
+    text-align: left;
+  }
+  #hero .container {
+    padding: 6rem 0;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #hero .container .main{
+    width: 45%;
+  }
+  #hero .container .cover {
+    width: 45%;
+  }
+}

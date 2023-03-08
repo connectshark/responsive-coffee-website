@@ -1,11 +1,15 @@
 #header {
   position: sticky;
   top: 0;
+  background-color: #533128;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  z-index: 10;
 }
 #header .container {
   max-width: 1200px;
   margin: auto;
   width: 90%;
+  padding: .5rem 0;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -31,6 +35,7 @@
   margin: auto;
   text-align: center;
   padding: 1rem 0;
+  z-index: 10;
   background-image: linear-gradient(180deg, hsl(12, 32%, 22%) 0%, hsl(12, 42%, 12%) 100%);
 }
 #header .nav-link {
