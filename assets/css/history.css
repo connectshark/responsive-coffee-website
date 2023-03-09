@@ -9,7 +9,7 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  padding: 5rem 0;
+  padding: 5rem 0 10rem;
 }
 #history .container .content {
   margin-bottom: 4rem;
@@ -31,7 +31,7 @@
 @media screen and (min-width: 1024px) {
   #history .container {
     text-align: left;
-    padding: 7rem 0;
+    padding: 7rem 0 12rem;
     display: flex;
     flex-flow: row-reverse nowrap;
     align-items: center;

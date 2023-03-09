@@ -1,0 +1,139 @@
+#steps {
+  margin: -5rem 0 0;
+  border-radius: 4rem 4rem 0 0;
+  background-image: url('../img/coffee-beans-bg.png');
+  background-color: var(--color-main);
+  position: relative;
+  isolation: isolate;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#steps::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--color-main);
+  opacity: .6;
+  border-radius: 4rem 4rem 0 0;
+}
+#steps .container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 7rem 0;
+}
+#steps .container h2 {
+  font-family: var(--title-family);
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+#steps .steps {
+  width: 350px;
+  margin: auto;
+  counter-reset: num 0;
+  position: relative;
+}
+#steps .steps .curve {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 15%;
+  left: 0;
+  z-index: -1;
+}
+#steps .steps .step-item {
+  width: 75%;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+#steps .step-item:nth-child(2n) {
+  margin-left: auto;
+  text-align: right;
+}
+#steps .step-item figure {
+  background-color: #6e4f43;
+  border-radius: 999rem;
+  padding: 1rem;
+  width: 6rem;
+  height: 6rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+#steps .step-item:nth-child(2n) figure {
+  margin-left: auto;
+}
+#steps .step-item figure::before {
+  content: '0' counter(num);
+  counter-increment: num 1;
+  position: absolute;
+  z-index: 1;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 999rem;
+  background-color: var(--color-golden);
+  outline: .4rem solid var(--color-main);
+  color: var(--color-main);
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+#steps .step-item figure img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  #steps .steps {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #steps .steps .curve {
+    transform-origin: center;
+    rotate: 90deg;
+    height: 200%;
+    width: 50%;
+    left: 25%;
+    top: -20%;
+  }
+  #steps .steps .step-item {
+    width: 30%;
+    height: 20rem;
+    text-align: left;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  #steps .step-item:nth-child(2n) {
+    margin-left: 0;
+    flex-flow: column-reverse nowrap;
+    position: relative;
+    top: 10rem;
+  }
+  #steps .step-item:nth-child(2n) figure {
+    margin-left: 0;
+  }
+  #steps .step-item figure {
+    padding: 1rem;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 0;
+  }
+  #steps .step-item figure::before {
+    font-size: 1.5rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 999rem;
+    outline: .7rem solid var(--color-main);
+  }
+}

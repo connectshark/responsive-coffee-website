@@ -4,4 +4,5 @@
   --color-golden: #e2ba74;
   --color-main: #523025;
   --color-deep-golden: #2f110b;
+  --shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
 }
