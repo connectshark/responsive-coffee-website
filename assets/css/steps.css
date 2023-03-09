@@ -96,6 +96,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  #steps .container {
+    padding: 7rem 0 20rem;
+  }
   #steps .steps .curve {
     transform-origin: center;
     rotate: 90deg;

@@ -1,0 +1,18 @@
+#testimonial {
+  margin: -5rem 0 0;
+  border-radius: 4rem 4rem 0 0;
+  background-color: #fff;
+  color: var(--color-deep-golden);
+  position: relative;
+}
+#testimonial .container {
+  max-width: 1200px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+#testimonial .container .content h2 {
+  font-family: var(--title-family);
+}
