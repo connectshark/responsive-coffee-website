@@ -1,0 +1,112 @@
+#footer {
+  margin: -5rem 0 0;
+  border-radius: 4rem 4rem 0 0;
+  background-image: url('../img/coffee-beans-bg.png');
+  background-color: var(--color-main);
+  position: relative;
+  isolation: isolate;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#footer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--color-main);
+  opacity: .6;
+  border-radius: 4rem 4rem 0 0;
+}
+#footer .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 7rem 0;
+  display: flex;
+  flex-flow: column;
+  gap: 4rem;
+}
+#footer .container .detail .title{
+  display: block;
+}
+#footer .container .detail .title img {
+  width: 2rem;
+}
+#footer .container .detail p{
+  font-size: 2rem;
+  font-family: var(--title-family);
+  line-height: 2;
+}
+
+#footer .container .form .row{
+  margin-bottom: 1rem;
+}
+#footer .container .form .row input[type=email]{
+  background-color: transparent;
+  border: none;
+  outline: 1px solid var(--color-golden);
+  appearance: none;
+  padding: 1rem 2rem;
+  border-radius: 999rem;
+  color: var(--color-golden);
+}
+#footer .container .form .row input[type=email]::placeholder{
+  color: var(--color-golden);
+}
+#footer .container .form .row button[type=submit]{
+  background-color: var(--color-golden);
+  border: none;
+  display: block;
+  padding: 1rem;
+  border-radius: 999rem;
+  width: 100%;
+  cursor: pointer;
+  transition: opacity .3s ease;
+}
+#footer .container .form .row button[type=submit]:hover{
+  opacity: .8;
+}
+#footer .container .form .row{
+  text-align: left;
+}
+#footer .container .form .row a{
+  color: var(--color-golden);
+}
+#footer .container .social{
+  font-size: 0;
+}
+#footer .container .social li{
+  display: inline-block;
+  font-size: 1rem;
+}
+#footer .container .social li:not(:first-child){
+  margin-left: 1rem;
+}
+#footer .container .copyright {
+  color: var(--color-golden);
+  opacity: .5;
+}
+
+@media screen and (min-width: 1024px) {
+  #footer .container {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+  #footer .container .detail{
+    width: 40%;
+    text-align: left;
+  }
+  #footer .container .form{
+    width: 40%;
+  }
+  #footer .container .social{
+    width: 100%;
+  }
+  #footer .container .copyright{
+    width: 100%;
+  }
+}

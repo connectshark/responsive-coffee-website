@@ -10,9 +10,34 @@
   width: 80%;
   margin: auto;
   text-align: center;
-  padding: 7rem 0;
+  padding: 10rem 0 15rem;
 }
 
+#testimonial .container .content {
+  margin-bottom: 4rem;
+}
 #testimonial .container .content h2 {
   font-family: var(--title-family);
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+#testimonial .container .figure img {
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  #testimonial .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #testimonial .container .content{
+    width: 50%;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  #testimonial .container .figure {
+    width: 45%;
+  }
 }
