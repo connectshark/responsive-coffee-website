@@ -42,7 +42,9 @@
   display: inline-block;
   width: 20%;
 }
-
+#header .nav-link.active a {
+  color: var(--color-golden);
+}
 #header .nav-link .nav-icon {
   color: var(--color-golden);
 }

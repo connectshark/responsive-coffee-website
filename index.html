@@ -9,6 +9,7 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Responsive Coffee Website</title>
   <link rel="stylesheet" href="./assets/css/main.css">
+  <script defer src="./assets/js/main.js"></script>
 </head>
 <body>
   <header id="header">
@@ -19,32 +20,32 @@
       </h1>
       <nav>
         <ul>
-          <li class="nav-link">
-            <a href="javascript:;">
+          <li data-name="home" class="nav-link active">
+            <a href="#hero">
               <p class="nav-icon">
                 <i class='bx bx-home bx-sm'></i>
               </p>
               <p class="title-family nav-name">Home</p>
             </a>
           </li>
-          <li class="nav-link">
-            <a href="javascript:;">
+          <li data-name="about" class="nav-link">
+            <a href="#about">
               <p class="nav-icon">
                 <i class='bx bx-brightness bx-sm'></i>
               </p>
               <p class="title-family nav-name">About</p>
             </a>
           </li>
-          <li class="nav-link">
-            <a href="javascript:;">
+          <li data-name="steps" class="nav-link">
+            <a href="#steps">
               <p class="nav-icon">
                 <i class='bx bx-walk bx-sm'></i>
               </p>
               <p class="title-family nav-name">Steps</p>
             </a>
           </li>
-          <li class="nav-link">
-            <a href="javascript:;">
+          <li data-name="testimonial" class="nav-link">
+            <a href="#testimonial">
               <p class="nav-icon">
                 <i class='bx bxs-magic-wand bx-sm' ></i>
               </p>
@@ -56,7 +57,7 @@
     </div>
   </header>
   <main>
-    <section id="hero">
+    <section data-name="home" class="select-section" id="hero">
       <div class="container">
         <div class="main">
           <p class="sub-title">EXCEPTIONAL QUALITY</p>
@@ -69,7 +70,7 @@
         </figure>
       </div>
     </section>
-    <section id="shop">
+    <section data-name="about" class="select-section" id="about">
       <div class="container">
         <div class="content">
           <p class="row">
@@ -113,7 +114,7 @@
         </figure>
       </div>
     </section>
-    <section id="steps">
+    <section data-name="steps" class="select-section" id="steps">
       <div class="container">
         <h2>Steps of manufacturing our products</h2>
         <ul class="steps">
@@ -139,7 +140,7 @@
         </ul>
       </div>
     </section>
-    <section id="testimonial">
+    <section data-name="testimonial" class="select-section" id="testimonial">
       <div class="container">
         <div class="content">
           <h2>Coffee is the best drink in the morning, it keeps you focused.</h2>
@@ -162,7 +163,7 @@
       </div>
       <form class="form">
         <p class="row">
-          <input type="email" placeholder="Enter e-mail address" class="mail">
+          <input required type="email" placeholder="Enter e-mail address" class="mail">
         </p>
         <p class="row">
           <button type="submit">Subscribe <i class='bx bx-chevron-right'></i></button>

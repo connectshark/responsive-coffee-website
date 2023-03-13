@@ -1,23 +1,23 @@
-#shop {
+#about {
   margin: -5rem 0 0;
   border-radius: 4rem 4rem 0 0;
   background-color: var(--color-main);
 }
 
-#shop .container {
+#about .container {
   padding: 4rem 0;
   width: 80%;
   margin: auto;
   max-width: 1200px;
 }
-#shop .container .content {
+#about .container .content {
   margin-bottom: 4rem;
   text-align: center;
 }
-#shop .container .content .row {
+#about .container .content .row {
   margin-bottom: 2rem;
 }
-#shop .container .content .button {
+#about .container .content .button {
   background-color: var(--color-deep-golden);
   display: inline-block;
   padding: 1rem 2rem;
@@ -29,55 +29,55 @@
   color: #fff;
   box-shadow: var(--shadow);
 }
-#shop .container .content .button:hover {
+#about .container .content .button:hover {
   transform: translateY(.5rem);
 }
-#shop .container .products {
+#about .container .products {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
   text-align: center;
 }
-#shop .container .products .product-item {
+#about .container .products .product-item {
   width: 40%;
   margin-bottom: 3rem;
 }
-#shop .container .products .product-item figure {
+#about .container .products .product-item figure {
   margin-bottom: 1rem;
   transition: transform .3s ease;
 }
-#shop .container .products .product-item figure img {
+#about .container .products .product-item figure img {
   width: 7rem;
   margin: auto;
 }
-#shop .container .products .product-item:hover figure {
+#about .container .products .product-item:hover figure {
   transform: translateY(-1rem);
 }
-#shop .container .products .product-item h4{
+#about .container .products .product-item h4{
   font-size: 1.2rem;
 }
-#shop .container .products .product-item h4,
-#shop .container .products .product-item p{
+#about .container .products .product-item h4,
+#about .container .products .product-item p{
   font-family: var(--title-family);
 }
 
 @media screen and (min-width: 1024px) {
-  #shop .container {
+  #about .container {
     padding: 7rem 0;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
   }
-  #shop .container .content {
+  #about .container .content {
     width: 40%;
     text-align: left;
   }
-  #shop .container .products {
+  #about .container .products {
     width: 50%;
   }
-  #shop .container .products .product-item {
+  #about .container .products .product-item {
     width: 25%;
   }
 }
